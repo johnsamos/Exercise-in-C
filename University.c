@@ -10,7 +10,6 @@ int i,j,fev;
 int a[N][M];
 int b[INCOME];
 
-
     srand(time(NULL));
     for(i=0;i<N;i++){
         for(j=0;j<M;j++){
@@ -23,7 +22,6 @@ int b[INCOME];
             printf("%d ", a[0][j]);
     }
     puts("\n");
-
     
     printf("Income for month February:\n");
         for(j=0;j<M-2;j++){
@@ -53,8 +51,7 @@ int b[INCOME];
         for(j=0;j<M;j++){
             if(a[2][j] > max){
                 printf("%d/3/2020 = %d \n",j+1, a[2][j]);
-            }
-            
+            }            
         }    
     return 0;
 }
