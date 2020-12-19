@@ -38,13 +38,15 @@ int b[INCOME];
     puts("\n");
 
     //New table for 3 months income
+    int sum;
     printf("Total income at 3 months:\n");
     for(i=0;i<N;i++){
         for(j=0;j<M;j++){
             b[j] = a[i][j];
-            printf("%d ", b[j]);
+            sum = sum+b[j];
         }
     }
+    printf("%d Euro", sum);
     puts("\n");
         int max=300;
         printf("Days with the highest income on march:\n");
